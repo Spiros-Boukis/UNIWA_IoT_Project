@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/teal_700"
+    tools:context=".UI.Destinations.TemperaturesFragment.MeasurementsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:id="@+id/room1Layout"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+
+
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:id="@+id/room1label"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+
+            android:background="@color/cardview_dark_background"
+            android:fontFamily="casual"
+            android:text="Room1"
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:id="@+id/sensor1Status"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room1label"
+            android:background="?attr/colorAccent"
+            android:fontFamily="monospace"
+            android:text="Sensor Status:  "
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/room1Status"
+            android:layout_width="204dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/room1label"
+            android:layout_marginTop="-1dp"
+
+            android:layout_toRightOf="@+id/sensor1Status"
+            android:fontFamily="sans-serif-black"
+            android:text="TextView"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/room1Temp"
+            android:layout_width="118dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/sensor1Status"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/measurements_border"
+            android:fontFamily="monospace"
+            android:text=""
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/hum1Label"
+            android:layout_width="95dp"
+            android:layout_height="67dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="172dp"
+
+            android:layout_marginTop="108dp"
+            android:fontFamily="serif"
+            android:src="@drawable/humidity_264"
+            android:text="Humidity: "
+            android:textAlignment="center"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/room1Hum"
+            android:layout_width="183dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-24dp"
+            android:layout_marginBottom="98dp"
+            android:layout_toRightOf="@+id/hum1Label"
+            android:background="@drawable/measurements_border"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/room1toogle"
+            android:layout_width="105dp"
+            android:layout_height="38dp"
+
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="39dp"
+            android:text="On/Off" />
+
+        <Switch
+            android:id="@+id/room1switch"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room1Status"
+            android:layout_alignParentRight="true"
+
+
+            android:layout_marginLeft="-223dp"
+            android:layout_marginTop="132dp"
+            android:layout_marginRight="177dp"
+            android:layout_toLeftOf="@id/room1toogle"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/tempIcon1"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="332dp"
+            android:layout_marginBottom="75dp"
+            android:src="@drawable/icons8_temperature_80" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/room2Layout"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_below="@id/room1Layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:id="@+id/room2label"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="@color/cardview_dark_background"
+            android:fontFamily="casual"
+            android:text="Room2"
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:textSize="35dp" />
+
+
+        <TextView
+            android:id="@+id/sensor2Status"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room2label"
+            android:textSize="20dp"
+            android:background="?attr/colorAccent"
+            android:fontFamily="monospace"
+            android:text="Sensor Status:  " />
+
+        <TextView
+            android:id="@+id/room2Status"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room2label"
+            android:layout_toRightOf="@+id/sensor2Status"
+            android:fontFamily="sans-serif-black"
+            android:text="TextView"
+            android:textAllCaps="true"
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:id="@+id/temp2Label"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sensor2Status"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="332dp"
+            android:layout_marginBottom="75dp"
+            android:fontFamily="sans-serif-medium"
+            android:src="@drawable/icons8_temperature_80" />
+
+        <TextView
+            android:id="@+id/room2Temp"
+            android:layout_width="118dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/sensor2Status"
+
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/measurements_border"
+            android:fontFamily="monospace"
+            android:text=""
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/hum2Label"
+            android:layout_width="95dp"
+            android:layout_height="67dp"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="166dp"
+
+            android:layout_marginTop="108dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="sans-serif-medium"
+            android:src="@drawable/humidity_264" />
+
+        <TextView
+            android:id="@+id/room2Hum"
+            android:layout_width="183dp"
+            android:layout_height="35dp"
+
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-19dp"
+            android:layout_marginBottom="94dp"
+            android:layout_toRightOf="@+id/hum2Label"
+            android:background="@drawable/measurements_border"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/room2toogle"
+            android:layout_width="105dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="155dp"
+            android:layout_marginBottom="29dp"
+            android:text="On/Off" />
+
+        <Switch
+            android:id="@+id/room2switch"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/room2Status"
+            android:layout_alignParentRight="true"
+
+
+            android:layout_marginTop="144dp"
+            android:layout_marginRight="174dp"
+            android:text="" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="560dp"
+        android:text="Connected" />
+
+    <Button
+        android:id="@+id/disconnectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="14dp"
+        android:text="Disconnect" />
+
+
+</RelativeLayout>

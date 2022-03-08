@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MQTT Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+    <!-- Sync Preferences -->
+    <string name="Main_Label"><b>Welcome To MQTT Application</b></string>
+    <string name="MQTT_CONN_ACTION">MQTT_CONN_ACTION</string>
+    <string name="MQTT_CONN_SUCCESS">MQTT_CON_SUCCESS</string>
+    <string name="MQTT_DISCONNECT_ACTION">MQTT_DISCONNECT_ACTION</string>
+    <string name="MQTT_DISCONNECTED">MQTT_DISCONNECTED</string>
+    <string name="MQTT_ACTION">MQTT_ACTION</string>
+    <string name="MQTT_REQUEST_RETAINED">MQTT_REQUEST_RETAINED</string>
+    <string name="MQTT_RETAINED_DELIVERY">MQTT_RETAINED_DELIVERY</string>
+
+</resources>
